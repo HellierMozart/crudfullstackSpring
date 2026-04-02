@@ -7,8 +7,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "disciplinas")
-public class Disciplinas {
+@Table(name = "turmas")
+public class Turmas {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +18,7 @@ public class Disciplinas {
     private int cargaHoraria;
     private boolean ativo;
 
-    public Disciplinas() {
+    public Turmas() {
     }
 
     public Long getId() {
@@ -53,5 +53,3 @@ public class Disciplinas {
         this.ativo = ativo;
     }
 }
-
-
