@@ -21,7 +21,7 @@ public class ProfessorDataLoader {
                 for (int i = 0; i < 200; i++) {
                     Professor professor = new Professor();
                     professor.setNome(faker.name().fullName());
-                    professor.setEspecialidade(faker.number().numberBetween(18, 80));
+                    professor.setEspecialidade("teste");
                     professor.setEmail(faker.internet().emailAddress());
                     professor.setAtivo(faker.bool().bool());
                     repository.save(professor);
