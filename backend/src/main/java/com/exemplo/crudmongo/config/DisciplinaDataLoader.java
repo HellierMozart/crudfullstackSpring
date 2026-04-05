@@ -21,7 +21,7 @@ public class DisciplinaDataLoader
             {
                 Faker faker = new Faker(new Locale("pt-BR"));
 
-                for (int i = 0; i < 200; i++)
+                for (int i = 0; i <= 200; i++)
                 {
                     Disciplina disciplina = new Disciplina();
                     disciplina.setNome(faker.educator().university());
