@@ -24,7 +24,7 @@ public class DisciplinaService
        return repository.findAll();
     }
 
-    public Disciplina create(Disciplina disciplina)
+    public Disciplina save(Disciplina disciplina)
     {
         return repository.save(disciplina);
     }

@@ -35,7 +35,7 @@ public class DisciplinaController
     @PostMapping
     public Disciplina createDisciplina(@RequestBody Disciplina disciplina)
     {
-        return service.save(disciplina);
+        return service.create(disciplina);
     }
 
     @PutMapping("/{id}")

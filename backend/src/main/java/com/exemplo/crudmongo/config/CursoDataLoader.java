@@ -18,7 +18,7 @@ public class CursoDataLoader {
             if (repository.count() == 0) {
                 Faker faker = new Faker(new Locale("pt-BR"));
 
-                for (int i = 0; i <= 200; i++) {
+                for (int i = 0; i < 200; i++) {
                     Curso curso = new Curso();
                     curso.setNome(faker.educator().course());
                     curso.setCargaHoraria(faker.number().numberBetween(20, 200));
