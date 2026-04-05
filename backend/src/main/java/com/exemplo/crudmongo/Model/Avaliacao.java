@@ -1,10 +1,10 @@
 package com.exemplo.crudmongo.model;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
@@ -24,12 +24,13 @@ public class Avaliacao {
     private Long        id;
     
     @ManyToOne
-    @Column(name = "pessoaId")
+    @JoinColumn(name = "pessoaId")
     private Pessoa      pessoa;
     
-    @ManyToMany
-    @Column(name = "disciplinaId")
+    @ManyToOne
+    @JoinColumn(name = "disciplinaId")
     private Disciplina  disciplina;
+
     private double      nota;
     private LocalDate   data;
     private boolean     ativo;
