@@ -22,6 +22,7 @@ public class DataLoader {
                     Pessoa pessoa = new Pessoa();
                     pessoa.setNome(faker.name().fullName());
                     pessoa.setIdade(faker.number().numberBetween(18, 70));
+                    pessoa.setEmail(faker.internet().emailAddress());
                     repository.save(pessoa);
                 }
 

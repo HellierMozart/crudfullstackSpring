@@ -34,28 +34,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-<<<<<<< HEAD
-<<<<<<< HEAD:Aplica-o_erro-main/aula20_10-main/crudfullstackSpring-alteracaoBancoDados/backend/pom.xml
-=======
->>>>>>> e517c4212c3367b8f37b9791cb0ac5b6d1574752
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-
-
-<<<<<<< HEAD
-=======
->>>>>>> 1bca434 (Alteração do Banco de Dados):backend/pom.xml
-=======
->>>>>>> e517c4212c3367b8f37b9791cb0ac5b6d1574752
-        <!-- REMOVER ESSE CÓDIGO 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency> -->
-
-        <!-- ADICIONAR A DEPENDÊNCIA DO JPA E DO H2 -->
+       <!-- ADICIONAR A DEPENDÊNCIA DO JPA E DO H2 -->
            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-jpa</artifactId>

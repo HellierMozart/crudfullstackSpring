@@ -2,7 +2,6 @@ package com.exemplo.crudmongo.controller;
 
 import com.exemplo.crudmongo.Model.Curso;
 import com.exemplo.crudmongo.service.CursoService;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,21 +20,18 @@ public class CursoController {
 
   
     @GetMapping
-    @PreAuthorize("hasAnyRole('ALUNO', 'COORDENADOR')")
     public List<Curso> listar() {
         return service.listarTodas();
     }
 
 
     @PostMapping
-    @PreAuthorize("hasRole('COORDENADOR')")
     public Curso criar(@RequestBody Curso curso) {
         return service.salvar(curso);
     }
 
  
     @PutMapping("/{id}")
-    @PreAuthorize("hasRole('COORDENADOR')")
     public Curso atualizar(@PathVariable Long id, 
     @RequestBody Curso curso) {
         return service.atualizar(id, curso);
@@ -43,7 +39,6 @@ public class CursoController {
 
    
     @DeleteMapping("/{id}")
-    @PreAuthorize("hasRole('COORDENADOR')")
     public void excluir(@PathVariable Long id) {
         service.excluir(id);
     }
