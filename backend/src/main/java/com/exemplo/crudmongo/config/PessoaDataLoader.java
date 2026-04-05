@@ -1,6 +1,6 @@
 package com.exemplo.crudmongo.config;
 
-import com.exemplo.crudmongo.Model.Pessoa;
+import com.exemplo.crudmongo.model.Pessoa;
 import com.exemplo.crudmongo.repository.PessoaRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;

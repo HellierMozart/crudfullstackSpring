@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.exemplo.crudmongo.Model.Curso;
+import com.exemplo.crudmongo.model.Curso;
 import com.exemplo.crudmongo.repository.CursoRepository;
 
 @Service

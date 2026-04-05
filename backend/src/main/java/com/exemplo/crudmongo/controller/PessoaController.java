@@ -1,6 +1,6 @@
 package com.exemplo.crudmongo.controller;
 
-import com.exemplo.crudmongo.Model.Pessoa;
+import com.exemplo.crudmongo.model.Pessoa;
 import com.exemplo.crudmongo.service.PessoaService;
 import org.springframework.web.bind.annotation.*;
 

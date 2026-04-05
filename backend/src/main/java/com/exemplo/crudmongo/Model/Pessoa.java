@@ -1,4 +1,4 @@
-package com.exemplo.crudmongo.Model;
+package com.exemplo.crudmongo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

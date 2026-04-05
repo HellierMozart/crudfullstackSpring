@@ -1,6 +1,6 @@
 package com.exemplo.crudmongo.config;
 
-import com.exemplo.crudmongo.Model.Curso;
+import com.exemplo.crudmongo.model.Curso;
 import com.exemplo.crudmongo.repository.CursoRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -10,7 +10,7 @@ import com.github.javafaker.Faker;
 
 import java.util.Locale;
 @Configuration
-public class DataLoader {
+public class CursoDataLoader {
 
     @Bean
     CommandLineRunner loadDatabase(CursoRepository repository) {
