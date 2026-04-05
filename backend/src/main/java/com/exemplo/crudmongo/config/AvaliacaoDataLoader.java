@@ -23,10 +23,10 @@ public class AvaliacaoDataLoader {
                 for (int i = 0; i <= 200; i++)
                 {
                     Avaliacao avaliacao = new Avaliacao();
-                    avaliacao.setPessoa(faker.number().numberBetween(1, 200));
-                    avaliacao.setDisciplina(faker.number().numberBetween(1, 200));
+                    avaliacao.setPessoa(null);
+                    avaliacao.setDisciplina(null);
                     avaliacao.setNota(faker.number().numberBetween(1, 10));
-                    avaliacao.setData(faker.date().future(30, null));
+                    avaliacao.setData(null);
                     avaliacao.setAtivo(faker.bool().bool());
                 }
                 

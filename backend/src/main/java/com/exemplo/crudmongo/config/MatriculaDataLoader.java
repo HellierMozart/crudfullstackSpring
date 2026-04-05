@@ -24,9 +24,9 @@ public class MatriculaDataLoader
                 for (int i = 0; i <= 200; i++)
                 {
                     Matricula matricula = new Matricula();
-                    matricula.setPessoa(faker.number().numberBetween(1, 200));
-                    matricula.setCurso(faker.number().numberBetween(1, 200));
-                    matricula.setDataMatricula(faker.date().past(30, null));
+                    matricula.setPessoa(null);
+                    matricula.setCurso(null);
+                    matricula.setDataMatricula(null);
                     matricula.setAtivo(faker.bool().bool());
                 }
 
@@ -34,6 +34,6 @@ public class MatriculaDataLoader
             } else {
                 System.out.println("ℹ️ Banco de matricula já contém dados, não foi necessário repopular.");
             }
-        }
+        };
     }
 }
