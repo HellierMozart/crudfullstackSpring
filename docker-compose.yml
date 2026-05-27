@@ -12,6 +12,56 @@ services:
     networks:
       - app-network
 
+  # Microserviço: Pessoa (porta 8082)
+  pessoa-service:
+    build:
+      context: ./microservicos/pessoa-service
+    container_name: pessoa-service
+    ports:
+      - "8082:8082"
+    networks:
+      - app-network
+
+  # Microserviço: Curso (porta 8083)
+  curso-service:
+    build:
+      context: ./microservicos/curso-service
+    container_name: curso-service
+    ports:
+      - "8083:8083"
+    networks:
+      - app-network
+
+  # Microserviço: Disciplina (porta 8084)
+  disciplina-service:
+    build:
+      context: ./microservicos/disciplina-service
+    container_name: disciplina-service
+    ports:
+      - "8084:8084"
+    networks:
+      - app-network
+
+  # Microserviço: Professor (porta 8085)
+  professor-service:
+    build:
+      context: ./microservicos/professor-service
+    container_name: professor-service
+    ports:
+      - "8085:8085"
+    networks:
+      - app-network
+
+  # Microserviço: Turma (porta 8086)
+  turma-service:
+    build:
+      context: ./microservicos/turma-service
+    container_name: turma-service
+    ports:
+      - "8086:8086"
+    networks:
+      - app-network
+
   # Frontend - Angular com Nginx configurado para redirecionar /api para o backend
   frontend:
     build:
