@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
 
     <name>professor-service</name>
-    <description>Microservio responsal pelo gerenciamento de professores</description>
+    <description>Microservico responsavel pelo gerenciamento de professores</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

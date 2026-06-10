@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
 
     <name>pessoa-service</name>
-    <description>Microservio responsal pelo gerenciamento de pessoas</description>
+    <description>Microservico responsavel pelo gerenciamento de pessoas</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
 
     <name>disciplina-service</name>
-    <description>Microservio responsal pelo gerenciamento de disciplinas</description>
+    <description>Microservico responsavel pelo gerenciamento de disciplinas</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

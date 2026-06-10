@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
 
     <name>turma-service</name>
-    <description>Microservio responsal pelo gerenciamento de turmas</description>
+    <description>Microservico responsavel pelo gerenciamento de turmas</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
