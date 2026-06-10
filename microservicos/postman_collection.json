@@ -1,0 +1,88 @@
+{
+  "info": {
+    "name": "CRUD Microservices - Examples",
+    "_postman_id": "b1f2d4d8-0000-4000-8000-000000000001",
+    "description": "Coleção com exemplos CRUD para curso-service (8083) e pessoa-service (8082). Copie para o Postman e execute.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "curso-service",
+      "item": [
+        {
+          "name": "Create Curso",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"nome\": \"Engenharia de Software\", \"ativo\": true }" },
+            "url": "http://localhost:8083/api/cursos"
+          }
+        },
+        {
+          "name": "List Cursos",
+          "request": { "method": "GET", "url": "http://localhost:8083/api/cursos" }
+        },
+        {
+          "name": "Get Curso by ID",
+          "request": { "method": "GET", "url": "http://localhost:8083/api/cursos/:id" }
+        },
+        {
+          "name": "Update Curso",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"nome\": \"Engenharia - Atualizado\", \"ativo\": true }" },
+            "url": "http://localhost:8083/api/cursos/:id"
+          }
+        },
+        {
+          "name": "Desativar Curso (PATCH)",
+          "request": { "method": "PATCH", "url": "http://localhost:8083/api/cursos/:id/desativar" }
+        },
+        {
+          "name": "Delete Curso",
+          "request": { "method": "DELETE", "url": "http://localhost:8083/api/cursos/:id" }
+        }
+      ]
+    },
+    {
+      "name": "pessoa-service",
+      "item": [
+        {
+          "name": "Create Pessoa",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"nome\": \"João Silva\", \"idade\": 25, \"email\": \"joao@example.com\", \"ativo\": true }" },
+            "url": "http://localhost:8082/api/pessoas"
+          }
+        },
+        {
+          "name": "List Pessoas",
+          "request": { "method": "GET", "url": "http://localhost:8082/api/pessoas" }
+        },
+        {
+          "name": "Get Pessoa by ID",
+          "request": { "method": "GET", "url": "http://localhost:8082/api/pessoas/:id" }
+        },
+        {
+          "name": "Update Pessoa",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{ \"nome\": \"João Silva Atualizado\", \"idade\": 26, \"email\": \"joao2@example.com\", \"ativo\": true }" },
+            "url": "http://localhost:8082/api/pessoas/:id"
+          }
+        },
+        {
+          "name": "Desativar Pessoa (PATCH)",
+          "request": { "method": "PATCH", "url": "http://localhost:8082/api/pessoas/:id/desativar" }
+        },
+        {
+          "name": "Delete Pessoa",
+          "request": { "method": "DELETE", "url": "http://localhost:8082/api/pessoas/:id" }
+        }
+      ]
+    }
+  ]
+}
