@@ -7,19 +7,24 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "pessoas")
-public class Pessoa {
-
+@Table(name = "professor")
+public class Professor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String nome;
     private int idade;
     private String email;
+    private String area;
     private boolean ativo;
 
-    public Pessoa() {
+    public Professor() {}
+
+    public Professor(Long id, String nome, String area, boolean ativo) {
+        this.id = id;
+        this.nome = nome;
+        this.area = area;
+        this.ativo = ativo;
     }
 
     public Long getId() {
@@ -53,6 +58,9 @@ public class Pessoa {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getArea() { return area; }
+    public void setArea(String area) { this.area = area; }
 
     public boolean isAtivo() {
         return ativo;
