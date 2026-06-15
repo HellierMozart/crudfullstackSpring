@@ -14,11 +14,11 @@ public class UsuarioDataLoader {
         return args -> {
             if (usuarioRepository.findByUsername("professor").isEmpty()) {
                 usuarioService.salvarUsuario("professor", "prof123", "PROFESSOR");
-                System.out.println("? Usuário 'professor' criado (role: PROFESSOR)");
+                System.out.println("? Usuï¿½rio 'professor' criado (role: PROFESSOR)");
             }
             if (usuarioRepository.findByUsername("aluno").isEmpty()) {
-                usuarioService.salvarUsuario("aluno", "aluno123", "ALUNO");
-                System.out.println("? Usuário 'aluno' criado (role: ALUNO)");
+                usuarioService.salvarUsuario("aluno", "passwordEncoder.encode(\"123\")", "ALUNO");
+                System.out.println("? Usuï¿½rio 'aluno' criado (role: ALUNO)");
             }
         };
     }
